@@ -1,6 +1,6 @@
 # Future Engineers - Leoneers_QDi
 
-Dieses Repository bietet Einblicke in den Entwicklungsprozess unseres autonom fahrendes Roboterautos, welches wir im Rahmen der Future Engineers Category der World Robot Olympiad (WRO) konzipiert und programmiert haben.
+Dieses Repository bietet Einblicke in den Entwicklungsprozess unseres autonom fahrenden Roboterautos, welches wir im Rahmen der Future Engineers Category der World Robot Olympiad (WRO) konzipiert und programmiert haben.
 
 # Inhalt
   * Programmcode
