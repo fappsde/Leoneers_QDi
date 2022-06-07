@@ -23,8 +23,8 @@ Damit der Antriebs- und der Servomotor vernünftig vom Raspberry Pi angesteuert 
 
 ## Autonomes Fahren und Hinderniserkennung
 
-Als wir mit dem Aufbauprozess des Autos soweit fertig waren, konnten wir uns ab diesem Zeitpunkt an die eigentlichen Aufgaben des autonomen Fahrens und der Hinderniserkennung begeben. 
-
+Als wir mit dem Aufbauprozess des Autos soweit fertig waren, konnten wir uns ab diesem Zeitpunkt an die eigentlichen Aufgaben des autonomen Fahrens und der Hinderniserkennung begeben. Die erste Idee, die wir für die Orientierung auf dem Spielfeld verfolgten, war die Verwendung von Lidar Sensoren, welche verbauten wir vorne und jeweils an den Seiten des Autos. Lidar Sensoren werden bereits für das autonome Fahren in Kraftfahrzeuge verbaut, da diese ein Abbild der Umgebung erzeugen können. Dadurch, dass die Lidar Sensoren mit Infrarotlicht arbeiten, stellten wir fest, dass dies mit der schwarzen Bande des Spielfeldes nicht kompatibel war, weshalb wir die Idee der Lidar Sensoren verwerfen mussten.
+Die Alternative auf die wir uns von dort an konzentrierten, war die Verwendung der Kameras. Wir arbeiten mit zwei Kameras, da wir dadurch einen größeren Öffnungswinkel erzeugen können. Mithilfe der Kameras gelingt es uns die Banden und die Hindernisse zu erkennen, d.h. die Hauptbestandteile unseres Programms bestehen aus Bilderkennungsalgorithmen.
 # Technische Komponenten
 
 * Raspberry Pi CM4
