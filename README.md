@@ -19,10 +19,10 @@ Nachdem wir die Entscheidung getroffen hatten, dass wir teilnehmen wollen, kam d
 # Aufbau des Roboterautos
 
 Zunächst überlegten wir uns das Roboterauto von Grund auf selbst mittels CAD und additiver Herstellung zu konstruieren. Jedoch wurde uns schnell klar, dass dies zeitlich neben dem Studium leider nicht möglich gewesen wäre. Deshalb wählten wir ein altes ferngesteuertes Auto als Chassis unseres Roboterautos. Als EV3 Stein Ersatz arbeiteten wir von nun an mit einem Raspberry Pi CM4. Des Weiteren verfügt das Auto über zwei Raspberry Pi Kameras, welche wir für das autonome Fahren und das Erkennen der Hindernisse verwenden.
-Damit der Antriebs- und der Servomotor vernünftig vom Raspberry Pi angesteuert werden können, mussten feststellen, dass ein ESP 32 Microcontroller notwendig ist, da das PWM (Pulsweitenmodulation) Signal ansonsten nicht konstant gewesen wäre, was ein Zittern des Servomotors verursacht hätte.
+Damit der Antriebs- und der Servomotor vernünftig vom Raspberry Pi angesteuert werden können, mussten feststellen, dass ein ESP 32 Mikrocontroller notwendig ist, da das PWM (Pulsweitenmodulation) Signal ansonsten nicht konstant gewesen wäre, was ein Zittern des Servomotors verursacht hätte.
 
 # Technische Komponenten
 
 * Raspberry Pi CM4
-* ESP 32 Microcontroller
+* ESP 32 Mikrocontroller
 * Raspberry Pi Kamera
