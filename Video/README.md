@@ -1,2 +1,1 @@
-Hier sehen Sie unser Video
-[![Watch the video]()](https://youtu.be/amUso_nRZ14)
+Hier gelangen Sie zu unserem [Youtube Video](https://youtu.be/amUso_nRZ14)
