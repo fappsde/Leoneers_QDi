@@ -23,7 +23,7 @@ Nachdem wir die Entscheidung getroffen hatten, dass wir teilnehmen wollen, kam d
 
 Zunächst überlegten wir uns das Roboterauto von Grund auf selbst mittels CAD und additiver Herstellung zu konstruieren. Jedoch wurde uns schnell klar, dass dies zeitlich neben dem Studium leider nicht möglich gewesen wäre. Deshalb wählten wir ein altes ferngesteuertes Auto als Chassis unseres Roboterautos. Als EV3 Stein Ersatz arbeiteten wir von nun an mit einem Raspberry Pi CM4. Des Weiteren verfügt das Auto über zwei Raspberry Pi Kameras, welche wir für das autonome Fahren und das Erkennen der Hindernisse verwenden.
 Damit der Antriebs- und der Servomotor vernünftig vom Raspberry Pi angesteuert werden können, mussten feststellen, dass ein ESP 32 Mikrocontroller notwendig ist, da das PWM (Pulsweitenmodulation) Signal ansonsten nicht konstant gewesen wäre, was ein Zittern des Servomotors verursacht hätte. 
-Mehr Information über den Aufbau des Programmes und den Zusammenhang des Codes und der elektromechatronischen Komponenten, finden Sie beim [Programmcode](https://github.com/fappsde/Leoneers_QDi/tree/main/Programmcode)
+Mehr Information über den Aufbau des Programmes und den Zusammenhang des Codes und der elektromechatronischen Komponenten, finden Sie beim [Programmcode](https://github.com/fappsde/Leoneers_QDi/tree/main/Programmcode).
 
 ## Autonomes Fahren und Hinderniserkennung
 
@@ -34,3 +34,4 @@ Die Alternative auf die wir uns von dort an konzentrierten, war die Verwendung d
 * Raspberry Pi CM4
 * ESP 32 Mikrocontroller
 * Raspberry Pi Kamera
+* Gyro Sensor
