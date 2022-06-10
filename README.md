@@ -5,6 +5,9 @@ Dieses Repository bietet Einblicke in den Entwicklungsprozess unseres autonom fa
 # Inhalt
   * Bilder
   * Programmcode
+    * Module des Codes
+    * Zusammenhang der Module und der elektromechatronischen Komponenten
+    * Prozess des Erstellens, Kompilierens und Hochladens auf die Steuergeräte
   * Technische Zeichnungen
   * Video
   
