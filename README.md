@@ -29,16 +29,16 @@ Dennoch hatten wir das Glück, dass wir uns als 1. Platz für das Deutschlandfin
  * Zu großer Wenderadius, wodurch das Auto die Kurven zu groß gefahren ist und auch nicht flexibel genug den Hindernissen ausweichen konnte.
  * Die Bandenerkennung, die wir mittels einer Bilderkennung implementierten, war vor Ort fehleranfällig, da das Bild der Kamera überbelichtet war, sodass  die schwarze Bande nicht mehr erkannt werden konnte. 
 
+## Umbau des Roboterautos
+Mit den in Dortmund festgestellten Problemen begann für uns zu Hause wieder die Arbeit, diese Probleme zu beheben. Dadurch, dass der Wenderadius zu groß war und auch an dem alten Modell nicht mehr vergrößert werden konnte, mussten wir um diesen zu verkleinern noch eine Hinterradlenkung einbauen. Wir entschieden uns einen zweiten Prototypen zu entwickeln, um das Auto, was bereits funktionierte auch wenn nicht perfekt, nicht zu demontieren, um so ggf. auf ein Backup zurückgreifen zu können. 
+
+Damit wir die Hinterradlenkung verbauen konnten, mussten wir zunächst die aktuelle Bodenplatte des Roboterautos neu konstruieren, um jeweils vorne und hinten eine Lenkeinheit verbauen zu können. Außerdem musste die Position des Motors geändert werden und ein weiterer Servomotor musste verbaut werden. Zunächst fertigten wir eine technische Zeichnung auf Papier an um diese anschließen in das CAM Programm zu übertragen. Dadurch, dass wir die neue Bodenplatte aus Aluminium frästen, waren diese Arbeitsschritte notwendig. 
+
 ## Aufbau des Roboterautos
 
 Zunächst überlegten wir uns das Roboterauto von Grund auf selbst mittels CAD und additiver Herstellung zu konstruieren. Jedoch wurde uns schnell klar, dass dies zeitlich neben dem Studium leider nicht möglich gewesen wäre. Deshalb wählten wir ein altes ferngesteuertes Auto als Chassis unseres Roboterautos. Als EV3 Stein Ersatz arbeiteten wir von nun an mit einem Raspberry Pi CM4. Des Weiteren verfügt das Auto über zwei Raspberry Pi Kameras, welche wir für das autonome Fahren und das Erkennen der Hindernisse verwenden.
 Damit der Antriebs- und der Servomotor vernünftig vom Raspberry Pi angesteuert werden können, mussten feststellen, dass ein ESP 32 Mikrocontroller notwendig ist, da das PWM (Pulsweitenmodulation) Signal ansonsten nicht konstant gewesen wäre, was ein Zittern des Servomotors verursacht hätte. 
 Mehr Information über den Aufbau des Programmes und den Zusammenhang des Codes und der elektromechatronischen Komponenten, finden Sie beim [Programmcode](https://github.com/fappsde/Leoneers_QDi/tree/main/Programmcode).
-
-## Umbau des Roboterautos
-Mit den in Dortmund festgestellten Problemen begann für uns zu Hause wieder die Arbeit, diese Probleme zu beheben. Dadurch, dass der Wenderadius zu groß war und auch an dem alten Modell nicht mehr vergrößert werden konnte, mussten wir um diesen zu verkleinern noch eine Hinterradlenkung einbauen. Wir entschieden uns einen zweiten Prototypen zu entwickeln, um das Auto, was bereits funktionierte auch wenn nicht perfekt, nicht zu demontieren, um so ggf. auf ein Backup zurückgreifen zu können. 
-
-Damit wir die Hinterradlenkung verbauen konnten, mussten wir zunächst die aktuelle Bodenplatte des Roboterautos neu konstruieren, um jeweils vorne und hinten eine Lenkeinheit verbauen zu können. Außerdem musste die Position des Motors geändert werden und ein weiterer Servomotor musste verbaut werden. Zunächst fertigten wir eine technische Zeichnung auf Papier an um diese anschließen in das CAM Programm zu übertragen. Dadurch, dass wir die neue Bodenplatte aus Aluminium frästen, waren diese Arbeitsschritte notwendig. 
 
 ## Autonomes Fahren und Hinderniserkennung
 
