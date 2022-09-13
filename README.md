@@ -1,6 +1,7 @@
 # Future Engineers - Leoneers_QDi - Deutschlandfinale
 
-Dieses Repository bietet Einblicke in den Entwicklungsprozess unseres autonom fahrenden Roboterautos, welches wir im Rahmen der Future Engineers Category der World Robot Olympiad (WRO) konzipiert und programmiert haben.
+Dieses Repository bietet Einblicke in den Weiterentwicklungsprozess unseres autonom fahrenden Roboterautos nach unserem Vorentscheid in Dortmund, welches wir im Rahmen der Future Engineers Category der World Robot Olympiad (WRO) konzipiert und programmiert haben. 
+Die alte Dokumentation des Vorentscheids ist diesem [Branch](https://github.com/fappsde/Leoneers_QDi/blob/Vorentscheid_Dortmund/README.md) zu finden.
 
 # Inhalt
   * Bilder
