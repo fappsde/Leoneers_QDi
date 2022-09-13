@@ -1,7 +1,7 @@
 # Future Engineers - Leoneers_QDi - Deutschlandfinale
 
 Dieses Repository bietet Einblicke in den Weiterentwicklungsprozess unseres autonom fahrenden Roboterautos nach unserem Vorentscheid in Dortmund, welches wir im Rahmen der Future Engineers Category der World Robot Olympiad (WRO) konzipiert und programmiert haben. 
-Die alte Dokumentation des Vorentscheids ist diesem [Branch](https://github.com/fappsde/Leoneers_QDi/blob/Vorentscheid_Dortmund/README.md) zu finden.
+Die unveränderte Dokumentation des Vorentscheids ist diesem [Branch](https://github.com/fappsde/Leoneers_QDi/blob/Vorentscheid_Dortmund/README.md) zu finden.
 
 # Inhalt
   * Bilder
@@ -20,6 +20,12 @@ Da uns beide die Thematik der zukünftigen Mobilität und das autonome Fahren in
 
 Nachdem wir die Entscheidung getroffen hatten, dass wir teilnehmen wollen, kam die Frage auf mit welchem Roboter System wir die Herausforderung des Autonomenfahrens meistern wollen? In der Vergangenheit arbeiteten wir immer gerne mit dem EV3 und Lego Technik. Jedoch stießen wir insbesondere die Programmierung betreffend mit der EV3 eigenen Programmiersprache auf Grenzen. Aus diesem Grund entschlossen wir uns dazu eine neue Herausforderung anzunehmen, und die EV3 Welt hinter uns zu lassen. Mit dieser Entscheidung dem Mindstorms Kosmos den Rücken zu zukehren, waren wir nun allerdings mit der Frage konfrontiert für welches der zahlreichen Robotersysteme, welche auf dem Markt erhältlich sind, wir uns entscheiden.
 
+##Vorentscheid Dortmund
+
+Aufgrund unserer zahlreichen Teilnahmen seit der 5. Klasse an der WRO wissen wir, dass der eigentliche Wettbewerbstag immer etwas ganz besonderes ist. Nicht nur, weil es ein schönes Ereignis in einer uns fremden Stadt ist, sondern auch, weil an diesem Tag die intensive Arbeit der letzten Wochen und Monate auf die Probe gestellt. Des Öfteren fuhren wir mit einem sehr guten Gefühl zum Wettbewerb, und mussten dann leider feststellen, dass wir uns getäuscht hatten, da der Roboter auf einmal nicht mehr das machte, was er sollte bspw. aufgrund der örtlichen Gegebenheiten, welche die Sensorik anders beeinflusst als bei der Vorbereitung. Dementsprechend lernten wir über die Jahre mit Überraschungen am Wettbewerbstag umgehen zu können. 
+Ein ähnliches Erlebnis hatten wir auch bei unserem Vorentscheid in Dortmund im Juni. Zuhause und vor den Wettbewerbsdurchläufen vor Ort alles perfekt läuft. Doch dann kommt der entscheidende Durchlauf, wo unser Auto auf einmal nach der ersten Kurve an der Bande hängen blieb, was in diesem Augenblick natürlich sehr ärgerlich und frustrierend ist. Aber auch das gehört zur WRO dazu.
+Dennoch hatten wir das Glück, dass wir uns als 1. Platz für das Deutschlandfinale qualifizieren konnten. 
+
 ## Aufbau des Roboterautos
 
 Zunächst überlegten wir uns das Roboterauto von Grund auf selbst mittels CAD und additiver Herstellung zu konstruieren. Jedoch wurde uns schnell klar, dass dies zeitlich neben dem Studium leider nicht möglich gewesen wäre. Deshalb wählten wir ein altes ferngesteuertes Auto als Chassis unseres Roboterautos. Als EV3 Stein Ersatz arbeiteten wir von nun an mit einem Raspberry Pi CM4. Des Weiteren verfügt das Auto über zwei Raspberry Pi Kameras, welche wir für das autonome Fahren und das Erkennen der Hindernisse verwenden.
@@ -30,6 +36,7 @@ Mehr Information über den Aufbau des Programmes und den Zusammenhang des Codes 
 
 Als wir mit dem Aufbauprozess des Autos soweit fertig waren, konnten wir uns ab diesem Zeitpunkt an die eigentlichen Aufgaben des autonomen Fahrens und der Hinderniserkennung begeben. Die erste Idee, die wir für die Orientierung auf dem Spielfeld verfolgten, war die Verwendung von Lidar Sensoren, welche verbauten wir vorne und jeweils an den Seiten des Autos. Lidar Sensoren werden bereits für das autonome Fahren in Kraftfahrzeuge verbaut, da diese ein Abbild der Umgebung erzeugen können. Dadurch, dass die Lidar Sensoren mit Infrarotlicht arbeiten, stellten wir fest, dass dies mit der schwarzen Bande des Spielfeldes nicht kompatibel war, weshalb wir die Idee der Lidar Sensoren verwerfen mussten.
 Die Alternative auf die wir uns von dort an konzentrierten, war die Verwendung der Kameras. Wir arbeiten mit zwei Kameras, da wir dadurch einen größeren Öffnungswinkel erzeugen können. Mithilfe der Kameras gelingt es uns die Banden und die Hindernisse zu erkennen, d.h. die Hauptbestandteile unseres Programms bestehen aus Bilderkennungsalgorithmen.
+
 # Technische Komponenten
 
 * Raspberry Pi CM4
