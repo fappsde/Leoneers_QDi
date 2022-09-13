@@ -34,6 +34,8 @@ Mit den in Dortmund festgestellten Problemen begann für uns zu Hause wieder die
 
 Damit wir die Hinterradlenkung verbauen konnten, mussten wir zunächst die aktuelle Bodenplatte des Roboterautos neu konstruieren, um jeweils vorne und hinten eine Lenkeinheit verbauen zu können. Außerdem musste die Position des Motors geändert werden und ein weiterer Servomotor musste verbaut werden. Zunächst fertigten wir eine technische Zeichnung auf Papier an um diese anschließen in das CAM Programm zu übertragen. Dadurch, dass wir die neue Bodenplatte aus Aluminium frästen, waren diese Arbeitsschritte notwendig. 
 
+Eine weitere Umbaumaßnahme ging mit dem Design einer eigenen Platine einher. Damit entstand wohl auch der optisch größte Unterschied vom neuen Modell zum alten, denn dank der Platine verschwand der auffällige Kabelbaum.
+
 ## Aufbau des Roboterautos
 
 Zunächst überlegten wir uns das Roboterauto von Grund auf selbst mittels CAD und additiver Herstellung zu konstruieren. Jedoch wurde uns schnell klar, dass dies zeitlich neben dem Studium leider nicht möglich gewesen wäre. Deshalb wählten wir ein altes ferngesteuertes Auto als Chassis unseres Roboterautos. Als EV3 Stein Ersatz arbeiteten wir von nun an mit einem Raspberry Pi CM4. Des Weiteren verfügt das Auto über zwei Raspberry Pi Kameras, welche wir für das autonome Fahren und das Erkennen der Hindernisse verwenden.
