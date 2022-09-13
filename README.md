@@ -24,6 +24,7 @@ Nachdem wir die Entscheidung getroffen hatten, dass wir teilnehmen wollen, kam d
 
 Aufgrund unserer zahlreichen Teilnahmen seit der 5. Klasse an der WRO wissen wir, dass der eigentliche Wettbewerbstag immer etwas ganz besonderes ist. Nicht nur, weil es ein schönes Ereignis in einer uns fremden Stadt ist, sondern auch, weil an diesem Tag die intensive Arbeit der letzten Wochen und Monate auf die Probe gestellt. Des Öfteren fuhren wir mit einem sehr guten Gefühl zum Wettbewerb, und mussten dann leider feststellen, dass wir uns getäuscht hatten, da der Roboter auf einmal nicht mehr das machte, was er sollte bspw. aufgrund der örtlichen Gegebenheiten, welche die Sensorik anders beeinflusst als bei der Vorbereitung. Dementsprechend lernten wir über die Jahre mit Überraschungen am Wettbewerbstag umgehen zu können. 
 Ein ähnliches Erlebnis hatten wir auch bei unserem Vorentscheid in Dortmund im Juni. Zuhause und vor den Wettbewerbsdurchläufen vor Ort alles perfekt läuft. Doch dann kommt der entscheidende Durchlauf, wo unser Auto auf einmal nach der ersten Kurve an der Bande hängen blieb, was in diesem Augenblick natürlich sehr ärgerlich und frustrierend ist. Aber auch das gehört zur WRO dazu.
+
 Dennoch hatten wir das Glück, dass wir uns als 1. Platz für das Deutschlandfinale qualifizieren konnten. 
 
 ## Aufbau des Roboterautos
