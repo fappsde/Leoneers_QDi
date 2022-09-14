@@ -32,9 +32,17 @@ Dennoch hatten wir das Glück, dass wir uns als 1. Platz für das Deutschlandfin
 ## Umbau des Roboterautos
 Mit den in Dortmund festgestellten Problemen begann für uns zu Hause wieder die Arbeit, diese Probleme zu beheben. Dadurch, dass der Wenderadius zu groß war und auch an dem alten Modell nicht mehr vergrößert werden konnte, mussten wir um diesen zu verkleinern noch eine Hinterradlenkung einbauen. Wir entschieden uns einen zweiten Prototypen zu entwickeln, um das Auto, was bereits funktionierte auch wenn nicht perfekt, nicht zu demontieren, um so ggf. auf ein Backup zurückgreifen zu können. 
 
+### Doppelachslenkung
+
 Damit wir die Hinterradlenkung verbauen konnten, mussten wir zunächst die aktuelle Bodenplatte des Roboterautos neu konstruieren, um jeweils vorne und hinten eine Lenkeinheit verbauen zu können. Außerdem musste die Position des Motors geändert werden und ein weiterer Servomotor musste verbaut werden. Zunächst fertigten wir eine technische Zeichnung auf Papier an um diese anschließen in das CAM Programm zu übertragen. Dadurch, dass wir die neue Bodenplatte aus Aluminium frästen, waren diese Arbeitsschritte notwendig. 
 
-Eine weitere Umbaumaßnahme ging mit dem Design einer eigenen Platine einher. Damit entstand wohl auch der optisch größte Unterschied vom neuen Modell zum alten, denn dank der Platine verschwand der auffällige Kabelbaum.
+### Platinendesign
+
+Eine weitere Umbaumaßnahme ging mit dem Design einer eigenen Platine einher. Damit entstand wohl auch der optisch größte Unterschied vom neuen Modell zum alten, denn dank der Platine verschwand der auffällige Kabelbaum. Nicht nur optisch verschönert die Platine das Auto, sondern sie verfügt über jeweils zwei verbaute Rasberry Pi CM4 Module und ESP32 über mehr Rechenleistung und spart gleichzeitig noch Gewicht ein.
+
+Beim alten Modell ist der verbaute ESP32 regelmäßig abgestürzt. Es lag die Vermutung nahe, dass das Abstürzen durch zu wenig Rechenleistung verursacht wurde, sodass das Ansteuern der Lenkung und der Beleuchtung zu viel für einen ESP war. Deshalb designten wir die Platine so, dass die Platine nun Platz für zwei ESP32 bietet. Der eine ESP übernimmt die Ansteuerung der Doppelachslenkung und der zweite ESP ist dafür gedacht die nicht unbedingt notwendigen Spielereien, wie das Bremslicht ansteuert. So konnten wir bis dato Abstürze des ESP‘s verhindern.
+
+In unserem alten Modell verbauten wir zwei Kameras, die jeweils einen Blickwinkel von 60 Grad, so erzielten wir einen Blickwinkel von 120 Grad. Allerdings mussten wir im Vorentscheid feststellen, dass dies insbesondere beim Vorbeifahren an den Hindernissen zu wenig war. Daher war  der nächste Schritt naheliegend eine dritte Kamera zu verbauen, um einen größeren Öffnungswinkel von 180 Grad zu erhalten. Allerdings begrenzte ein Rasberry Pi uns daran, denn an einen Rasberry Pi können lediglich nur zwei Kameras angeschlossen werden. Da für uns klar war, dass wir drei Kameras verbauen wollten, mussten wir noch einen zweiten Rasberry Pi anschließen, was in dem Design der Platine ebenfalls berücksichtigt wurde.
 
 ## Aufbau des Roboterautos
 
