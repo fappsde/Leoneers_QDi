@@ -18,7 +18,9 @@ Da uns beide die Thematik der zukünftigen Mobilität und das autonome Fahren in
 
 ## Anfängliche Entscheidungen
 
-Nachdem wir die Entscheidung getroffen hatten, dass wir teilnehmen wollen, kam die Frage auf mit welchem Roboter System wir die Herausforderung des Autonomenfahrens meistern wollen? In der Vergangenheit arbeiteten wir immer gerne mit dem EV3 und Lego Technik. Jedoch stießen wir insbesondere die Programmierung betreffend mit der EV3 eigenen Programmiersprache auf Grenzen. Aus diesem Grund entschlossen wir uns dazu eine neue Herausforderung anzunehmen, und die EV3 Welt hinter uns zu lassen. Mit dieser Entscheidung dem Mindstorms Kosmos den Rücken zu zukehren, waren wir nun allerdings mit der Frage konfrontiert für welches der zahlreichen Robotersysteme, welche auf dem Markt erhältlich sind, wir uns entscheiden.
+Nachdem wir die Entscheidung getroffen hatten, dass wir teilnehmen wollen, kam die Frage auf mit welchem Roboter System wir die Herausforderung des Autonomenfahrens meistern wollen? In der Vergangenheit arbeiteten wir immer gerne mit dem EV3 und Lego Technik. Jedoch stießen wir insbesondere die Programmierung betreffend mit der EV3 eigenen Programmiersprache auf Grenzen. Aus diesem Grund entschlossen wir uns dazu eine neue Herausforderung anzunehmen, und die EV3 Welt hinter uns zu lassen. Mit dieser Entscheidung dem Mindstorms Kosmos den Rücken zu zukehren, waren wir nun allerdings mit der Frage konfrontiert für welches der zahlreichen Robotersysteme, welche auf dem Markt erhältlich sind, wir uns entscheiden wollten.
+
+Zunächst überlegten wir uns das Roboterauto von Grund auf selbst mittels CAD und additiver Herstellung zu konstruieren. Jedoch wurde uns schnell klar, dass dies zeitlich neben dem Studium leider nicht möglich gewesen wäre. Deshalb wählten wir ein altes ferngesteuertes Auto als Chassis unseres ersten Roboterautos für die Teilnahme am Vorentscheid. Als EV3 Stein Ersatz arbeiteten wir von nun an mit einem Raspberry Pi CM4. Des Weiteren verfügte das erste Auto über zwei Raspberry Pi Kameras, welche wir für das autonome Fahren und das Erkennen der Hindernisse verwendeten. Damit der Antriebs- und der Servomotor vernünftig vom Raspberry Pi angesteuert werden können, mussten wir feststellen, dass ein ESP 32 Mikrocontroller notwendig war, da das PWM (Pulsweitenmodulation) Signal ansonsten nicht konstant gewesen wäre, was ein Zittern des Servomotors verursacht hätte. Mit dieser technischen Ausstattung fuhren wir zum Vorentscheid nach Dortmund.
 
 ## Vorentscheid Dortmund
 
@@ -36,11 +38,11 @@ Mit den in Dortmund festgestellten Problemen begann für uns zu Hause wieder die
 
 Damit wir die Hinterradlenkung verbauen konnten, mussten wir zunächst die aktuelle Bodenplatte des Roboterautos neu konstruieren, um jeweils vorne und hinten eine Lenkeinheit verbauen zu können. Außerdem musste die Position des Motors geändert werden und ein weiterer Servomotor musste verbaut werden. Zunächst fertigten wir eine technische Zeichnung auf Papier an um diese anschließen in das CAM Programm zu übertragen. Dadurch, dass wir die neue Bodenplatte aus Aluminium frästen, waren diese Arbeitsschritte notwendig. 
 
-### Platinendesign
+### Elektromechanische Komponenten und Platinendesign 
 
 Eine weitere Umbaumaßnahme ging mit dem Design einer eigenen Platine einher. Damit entstand wohl auch der optisch größte Unterschied vom neuen Modell zum alten, denn dank der Platine verschwand der auffällige Kabelbaum. Nicht nur optisch verschönert die Platine das Auto, sondern sie verfügt über jeweils zwei verbaute Rasberry Pi CM4 Module und ESP32 über mehr Rechenleistung und spart gleichzeitig noch Gewicht ein.
 
-Beim alten Modell ist der verbaute ESP32 regelmäßig abgestürzt. Es lag die Vermutung nahe, dass das Abstürzen durch zu wenig Rechenleistung verursacht wurde, sodass das Ansteuern der Lenkung und der Beleuchtung zu viel für einen ESP war. Deshalb designten wir die Platine so, dass die Platine nun Platz für zwei ESP32 bietet. Der eine ESP übernimmt die Ansteuerung der Doppelachslenkung und der zweite ESP ist dafür gedacht die nicht unbedingt notwendigen Spielereien, wie das Bremslicht ansteuert. So konnten wir bis dato Abstürze des ESP‘s verhindern.
+Beim alten Modell ist der verbaute ESP32 regelmäßig abgestürzt. Es lag die Vermutung nahe, dass das Abstürzen durch zu wenig Rechenleistung verursacht wurde, sodass das Ansteuern der Lenkung und der Beleuchtung zu viel für einen ESP war. Deshalb designten wir die Platine so, dass die Platine nun Platz für zwei ESP32 bietet. Der eine ESP übernimmt die Ansteuerung der Doppelachslenkung und der zweite ESP ist dafür gedacht die nicht unbedingt notwendigen Spielereien, wie das Bremslicht anzusteuern. So konnten wir bis dato Abstürze des ESP‘s verhindern.
 
 In unserem alten Modell verbauten wir zwei Kameras, die jeweils einen Blickwinkel von 60 Grad, so erzielten wir einen Blickwinkel von 120 Grad. Allerdings mussten wir im Vorentscheid feststellen, dass dies insbesondere beim Vorbeifahren an den Hindernissen zu wenig war. Daher war  der nächste Schritt naheliegend eine dritte Kamera zu verbauen, um einen größeren Öffnungswinkel von 180 Grad zu erhalten. Allerdings begrenzte ein Rasberry Pi uns daran, denn an einen Rasberry Pi können lediglich nur zwei Kameras angeschlossen werden. Da für uns klar war, dass wir drei Kameras verbauen wollten, mussten wir noch einen zweiten Rasberry Pi anschließen, was in dem Design der Platine ebenfalls berücksichtigt wurde.
 
@@ -55,7 +57,7 @@ Mehr Information über den Aufbau des Programmes und den Zusammenhang des Codes 
 Als wir mit dem Aufbauprozess des Autos soweit fertig waren, konnten wir uns ab diesem Zeitpunkt an die eigentlichen Aufgaben des autonomen Fahrens und der Hinderniserkennung begeben. Die erste Idee, die wir für die Orientierung auf dem Spielfeld verfolgten, war die Verwendung von Lidar Sensoren, welche verbauten wir vorne und jeweils an den Seiten des Autos. Lidar Sensoren werden bereits für das autonome Fahren in Kraftfahrzeuge verbaut, da diese ein Abbild der Umgebung erzeugen können. Dadurch, dass die Lidar Sensoren mit Infrarotlicht arbeiten, stellten wir fest, dass dies mit der schwarzen Bande des Spielfeldes nicht kompatibel war, weshalb wir die Idee der Lidar Sensoren verwerfen mussten.
 Die Alternative auf die wir uns von dort an konzentrierten, war die Verwendung der Kameras. Wir arbeiten mit zwei Kameras, da wir dadurch einen größeren Öffnungswinkel erzeugen können. Mithilfe der Kameras gelingt es uns die Banden und die Hindernisse zu erkennen, d.h. die Hauptbestandteile unseres Programms bestehen aus Bilderkennungsalgorithmen.
 
-# Technische Komponenten
+# Übersicht der technischen Komponenten
 
 * 2 x Raspberry Pi CM4
 * 2 x ESP 32 Mikrocontroller
