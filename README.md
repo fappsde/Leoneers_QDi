@@ -26,7 +26,7 @@ Aufgrund unserer zahlreichen Teilnahmen seit der 5. Klasse an der WRO wissen wir
 Ein ähnliches Erlebnis hatten wir auch bei unserem Vorentscheid in Dortmund im Juni. Zuhause und vor den Wettbewerbsdurchläufen vor Ort alles perfekt läuft. Doch dann kommt der entscheidende Durchlauf, wo unser Auto auf einmal nach der ersten Kurve an der Bande hängen blieb, was in diesem Augenblick natürlich sehr ärgerlich und frustrierend ist. Aber auch das gehört zur WRO dazu.
 
 Dennoch hatten wir das Glück, dass wir uns als 1. Platz für das Deutschlandfinale qualifizieren konnten. Wir freuen uns sehr auf diese neue Herausforderung, denn in Dortmund stellten wir die folgenden Probleme fest, die es zu lösen galt:
- * Zu großer Wenderadius, wodurch das Auto die Kurven zu groß gefahren ist und auch nicht flexibel genug den Hindernissen ausweichen konnte.
+ * Zu großer Wenderadius, wodurch das Auto die Kurven zu groß fuhr und auch nicht flexibel genug den Hindernissen ausweichen konnte.
  * Die Bandenerkennung, die wir mittels einer Bilderkennung implementierten, war vor Ort fehleranfällig, da das Bild der Kamera überbelichtet war, sodass  die schwarze Bande nicht mehr erkannt werden konnte. 
 
 ## Umbau des Roboterautos
