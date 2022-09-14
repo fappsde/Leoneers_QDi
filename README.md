@@ -49,7 +49,9 @@ Die Alternative auf die wir uns von dort an konzentrierten, war die Verwendung d
 
 # Technische Komponenten
 
-* Raspberry Pi CM4
-* ESP 32 Mikrocontroller
-* Raspberry Pi Kamera
+* 2 x Raspberry Pi CM4
+* 2 x ESP 32 Mikrocontroller
+* 3 x Raspberry Pi Kamera
 * Gyro Sensor
+* Lidar Sensor
+* Positionskamera
