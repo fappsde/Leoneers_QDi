@@ -59,6 +59,13 @@ Der schöne Vorteil an dem funktionierenden Lidar im Vergleich zu der Verwendung
 
 Für das Erkennen der Hindernisse im Hindernisrennen ist die Verwendung der Kameras aber weiterhin notwendig, da wir die Farben ermittelt werden müssen, was der Lidar nicht kann. 
 
+## Herausforderungen im Entwicklungsprozess
+
+Nicht nur unser Auto muss die Hindernisse im Rennen meistern, sondern auch wir sind in der Entwicklung auf das ein oder andere Hindernis gestoßen. Aus unseren Lego Mindstorms Zeiten kannten wir es bereits uns mit unerwartet auftretenden Fehlen zu befassen, die nicht nur Zeit sondern auch Nerven kosten. So waren wir bspw. in der Wettbewerbswoche einmal an dem Punkt, dass die Kameras auf einmal nicht mehr funktionieren wollten. Dann begann eine lange Fehlersuchnacht, bis wir die Ursache, Lötzinnreste auf der Platine, die einen Kurzschluss verursachten, auffinden konnten. Ein ähnlich ärgerliches Problem ereignete sich einen Tag vor unser Abfahrt zum Wettbewerb nach Chemnitz und zwar brannte einer der Servomotoren durch. Das Problem war dann in dieser kurzen Zeit einen neuen Servo zu bekommen, den dann wieder zu verbauen und mit dem Programm in Einklang zu bringen.
+
+Eine WRO Teilnahme ohne Harausforderungen wäre ja auch langweilig:)
+
+
 # Übersicht der technischen Komponenten
 
 * 2 x Raspberry Pi CM4
