@@ -57,7 +57,7 @@ Uns war daher klar, dass wir die Problematik der Überbelichtung umgehen wollten
 
 Der schöne Vorteil an dem funktionierenden Lidar im Vergleich zu der Verwendung der Kameras, ist, dass wir so wesentlich besser die Banden erkennen können und das auch schon aus einer gewissen Distanz. Die Entfernungen, welche der Lidar misst, lassen sich anschließend in einer Karte kartographieren. Da wir bei der alten Version auch nicht wussten, wo wir uns auf dem Spielfeld befanden, haben wir noch eine Positionskamera verbaut. Die Positionskamera begegnet uns im Alltag täglich, wenn man eine Computer Maus benutzt. Die gleiche Technik machen wir uns zu Nutze, sodass mit den Winkelinformationen des Gyro Sensors und der Positionskamera die genaue Position des Autos in der Karte, die das Spielfeld darstellt eintragen können. Das ermöglicht es uns die Banden nicht anzufahren. 
 
-Für das Erkennen der Hindernisse im Hindernisrennen ist die Verwendung der Kameras aber weiterhin notwendig, da wir die Farben ermittelt werden müssen, was der Leider nicht kann. 
+Für das Erkennen der Hindernisse im Hindernisrennen ist die Verwendung der Kameras aber weiterhin notwendig, da wir die Farben ermittelt werden müssen, was der Lidar nicht kann. 
 
 # Übersicht der technischen Komponenten
 
