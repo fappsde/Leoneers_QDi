@@ -46,11 +46,6 @@ Beim alten Modell ist der verbaute ESP32 regelmäßig abgestürzt. Es lag die Ve
 
 In unserem alten Modell verbauten wir zwei Kameras, die jeweils einen Blickwinkel von 60 Grad, so erzielten wir einen Blickwinkel von 120 Grad. Allerdings mussten wir im Vorentscheid feststellen, dass dies insbesondere beim Vorbeifahren an den Hindernissen zu wenig war. Daher war  der nächste Schritt naheliegend eine dritte Kamera zu verbauen, um einen größeren Öffnungswinkel von 180 Grad zu erhalten. Allerdings begrenzte ein Rasberry Pi uns daran, denn an einen Rasberry Pi können lediglich nur zwei Kameras angeschlossen werden. Da für uns klar war, dass wir drei Kameras verbauen wollten, mussten wir noch einen zweiten Rasberry Pi anschließen, was in dem Design der Platine ebenfalls berücksichtigt wurde.
 
-## Aufbau des Roboterautos
-
-Zunächst überlegten wir uns das Roboterauto von Grund auf selbst mittels CAD und additiver Herstellung zu konstruieren. Jedoch wurde uns schnell klar, dass dies zeitlich neben dem Studium leider nicht möglich gewesen wäre. Deshalb wählten wir ein altes ferngesteuertes Auto als Chassis unseres Roboterautos. Als EV3 Stein Ersatz arbeiteten wir von nun an mit einem Raspberry Pi CM4. Des Weiteren verfügt das Auto über zwei Raspberry Pi Kameras, welche wir für das autonome Fahren und das Erkennen der Hindernisse verwenden.
-Damit der Antriebs- und der Servomotor vernünftig vom Raspberry Pi angesteuert werden können, mussten feststellen, dass ein ESP 32 Mikrocontroller notwendig ist, da das PWM (Pulsweitenmodulation) Signal ansonsten nicht konstant gewesen wäre, was ein Zittern des Servomotors verursacht hätte. 
-Mehr Information über den Aufbau des Programmes und den Zusammenhang des Codes und der elektromechatronischen Komponenten, finden Sie beim [Programmcode](https://github.com/fappsde/Leoneers_QDi/tree/main/Programmcode).
 
 ## Autonomes Fahren und Hinderniserkennung
 
