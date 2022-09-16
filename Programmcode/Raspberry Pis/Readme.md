@@ -1,1 +1,1 @@
-Hier ist der Raspi-code
+Die Raspberry Pis werden mit mehreren verschiedenen Klassen gesteuert, welche jeweils einem Sensortyp bzw einer Funktionsgruppe zugeordnet sind. In der Mainloop-Klasse fließen die Daten zusammer und werden zu fahrbefehlen umgewandelt. Zudem werden hier die einzelnen Sensoren gesteuert, die jeweils gleichzeitig und asynchron laufen.
