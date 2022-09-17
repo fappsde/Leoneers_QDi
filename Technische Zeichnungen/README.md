@@ -9,6 +9,9 @@ Die Platine für die zweite Genration wurde von uns mit dem Programm EAGLE (Einf
 Die gesamte Entwicklung und Inbetriebnahme der Platine, sowie die dazugehörigen Aufgaben wurden ohne externe Hilfe in unserem Team durchgeführt. Die Bestückung der SMD-Bauteile wurde freundlicherweise Maschinell bei der PicoLAS-GmbH durchgeführt.
 Selbes gilt auch für die Entwicklung des gefrästen Chassis.
 
+![TEST!](PS_finale[5999].pdf)
+
+
 ![TEST!](Schaltplan_LEONEERS-Mainboard.png)
 ![TEST!](Schaltplan_LEONEERS-Mainboard-Leistungsteil.png)
 
